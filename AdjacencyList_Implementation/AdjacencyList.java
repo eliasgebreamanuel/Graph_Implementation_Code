@@ -67,6 +67,7 @@ public class AdjacencyList {
 	}
 
 	public void dfs(int s) {
+		boolean [] checked = new boolean[V];
 		boolean[] visited = new boolean[V];
 		Stack<Integer> stack = new Stack<>();
 		stack.push(s);
